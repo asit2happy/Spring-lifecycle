@@ -12,6 +12,7 @@ public class ClientApp {
 		myBean bin=ctx.getBean("myBean",myBean.class);
 		
 		bin.display();
+		
 		ctx.registerShutdownHook();
 
 	}

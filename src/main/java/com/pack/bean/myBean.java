@@ -12,12 +12,12 @@ public class myBean implements BeanNameAware,ApplicationContextAware, Initializi
 	private String msg;
 	
 	public myBean() {
-		System.out.println("Object Created.");
+		System.out.println("Object Created. ");
 	}
 	
 	public void setMsg(String msg) {
 		this.msg=msg;
-		System.out.println("Dependency injected.");
+		System.out.println("Dependency injected. ");
 	}
 	
 	public void display() {

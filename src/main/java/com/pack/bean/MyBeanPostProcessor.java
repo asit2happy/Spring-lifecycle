@@ -9,7 +9,7 @@ public class MyBeanPostProcessor implements BeanPostProcessor{
 		return o;
 	}
 	public Object postProcessAfterInitialization(Object o, String bean) {
-		System.out.println("Post processer after initialization.");
+		System.out.println("Post processer  after initialization.");
 		return o;
 	}
 

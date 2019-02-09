@@ -8,4 +8,4 @@
    		<property name="msg" value="welcome"/>
    </bean>
    <bean class="com.pack.bean.MyBeanPostProcessor"/>
-   </beans>
+  </beans>
