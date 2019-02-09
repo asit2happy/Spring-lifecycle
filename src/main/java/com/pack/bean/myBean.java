@@ -16,7 +16,12 @@ public class myBean implements BeanNameAware,ApplicationContextAware, Initializi
 	}
 	
 	public void setMsg(String msg) {
+		this.msg=msg;
 		System.out.println("Dependency injected.");
+	}
+	
+	public void display() {
+		System.out.println("service Method called");
 	}
 	
 	public void destroy() throws Exception {
@@ -25,18 +30,18 @@ public class myBean implements BeanNameAware,ApplicationContextAware, Initializi
 	}
 
 	public void afterPropertiesSet() throws Exception {
-		System.out.println("After property set method");
+		System.out.println("afterPropertySet() Method Called");
 		
 	}
 
 	public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
 		
-		System.out.println(" Application context aware method called");
+		System.out.println("setApplicationContext method called");
 	}
 
 	public void setBeanName(String name) {
 		
-		System.out.println("Bean name aware method called");
+		System.out.println("setBeanName method called");
 
 	}
 	
@@ -44,7 +49,7 @@ public class myBean implements BeanNameAware,ApplicationContextAware, Initializi
 		System.out.println("Custom intit method called");
 	}
 	
-	public void customDestroy() {
+	public void tearDownBean() {
 		System.out.println("custom destroy method called");
 	}
 

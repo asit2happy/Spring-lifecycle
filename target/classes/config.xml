@@ -4,8 +4,8 @@
    xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
    
-   <bean id="myBean" class="com.pack.bean.myBean" init-method="customInit" destroy-method="customDestroy">
+   <bean id="myBean" class="com.pack.bean.myBean" init-method="customInit" destroy-method="tearDownBean">
    		<property name="msg" value="welcome"/>
    </bean>
-   
-   <bean />
+   <bean class="com.pack.bean.MyBeanPostProcessor"/>
+   </beans>
